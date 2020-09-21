@@ -226,15 +226,15 @@ class Model(pl.LightningModule):
         result = {"progress_bar": tqdm_dict, "log": tqdm_dict}
         return result
 
-    @pl.data_loader
+    # @pl.data_loader
     def train_dataloader(self):
         return self._train_dataloader
 
-    @pl.data_loader
+    # @pl.data_loader
     def val_dataloader(self):
         return self._val_dataloader
 
-    @pl.data_loader
+    # @pl.data_loader
     def test_dataloader(self):
         return self._test_dataloader
 
