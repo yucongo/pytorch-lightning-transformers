@@ -24,6 +24,7 @@ def preprocess(tokenizer: BertTokenizer, x: Dict) -> Dict:
             x["string2"],
             add_special_tokens=True,
             max_length=MAX_LEN,
+            truncation=True,
             )
 
     # First `input_ids` is a sequence of id-type representation of input string.
